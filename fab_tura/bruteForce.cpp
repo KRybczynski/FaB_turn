@@ -10,6 +10,8 @@ int bruteForce(vector<Card>& hand, int action_points, int mana, int n,
   vector<string>& sequence) {
   int damage_total = 0, max_damage = 0;
   vector<string> temp, biggest;
+  temp.reserve(n);
+  biggest.reserve(n);
   damage_total = max_damage = 0;
 
   if (action_points == 0 || n == 0) {
